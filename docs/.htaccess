@@ -1,0 +1,4 @@
+RewriteEngine On
+rewritecond %{http_host} ^merrayguzellikmerkezi.com [nc]
+rewriterule ^(.*)$ https://www.merrayguzellikmerkezi.com/$1 [r=301,nc]
+ErrorDocument 404 /404.html
